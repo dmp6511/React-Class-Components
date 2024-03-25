@@ -15,7 +15,7 @@
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\nclass HelloWorld extends React.Component {\n  render() {\n    return /*#__PURE__*/React.createElement(\"div\", null, \"Hello World!\");\n  }\n}\nconst init = () => {\n  ReactDOM.render( /*#__PURE__*/React.createElement(HelloWorld, null), document.getElementById('app'));\n};\nwindow.onload = init;\n\n//# sourceURL=webpack://react-class-components/./client/example1.jsx?");
+eval("// bring in react library\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\nclass HelloWorld extends React.Component {\n  render() {\n    return /*#__PURE__*/React.createElement(\"div\", null, \"Hello World!\");\n  }\n}\nconst init = () => {\n  ReactDOM.render( /*#__PURE__*/React.createElement(HelloWorld, null), document.getElementById('app'));\n};\nwindow.onload = init;\n\n//# sourceURL=webpack://react-class-components/./client/example1.jsx?");
 
 /***/ }),
 

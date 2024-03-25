@@ -10,11 +10,13 @@ class HelloUser extends React.Component {
         this.state = {
             username: props.username,
         }
-    };
+    }
 
     // event handler for name change
     HandleNameChange = (e) => {
-
+        this.setState({
+            username: e.target.value,
+        });
     }
 
 
@@ -26,5 +28,12 @@ class HelloUser extends React.Component {
                 <input type="text" value={this.state.username} onChange={this.HandleNameChange} />
             </div>
         )
-    }
+    };
+
 }
+
+const init = () => {
+    reactDOM.render(<HelloUser username="De'Andre" />, document.getElementById('app'));
+}
+
+window.onload = init;
